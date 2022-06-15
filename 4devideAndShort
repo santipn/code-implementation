@@ -1,0 +1,10 @@
+const devideAndShort = (num) => {
+    let result = num.toString().split('0')
+    sortArr = result.map(item => {
+        return item.split('').sort((a, b) => {
+            return a - b
+        }).join('')
+    })
+    return Number.parseInt(sortArr.join(''))
+}
+console.log(devideAndShort(5956560159466056))
